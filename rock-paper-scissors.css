@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color:darkmagenta;
+    color: white;
+    font-family: 'Roboto Condensed', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.move-icon {
+    height : 50px;
+    cursor: pointer;
+}
+
+.move-button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-radius: 60px;
+    border-width: 3px;
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    transition: 0.1s ease;
+}
+
+.move-button:active{
+    scale: 1.1;
+    border-width: 5px;
+}
+
+.result {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.score {
+    margin-top: 30px;
+}
+
+.reset-score-button,
+.auto-play ,
+.yes-button,
+.no-button{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
+    cursor: pointer;
+    font-family: inherit;
+    /*inherit the font-family from the body*/
+    transition: 0.5s ease;
+}
+
+.reset-score-button:active,
+.auto-play:active,
+.yes-button:active,
+.no-button:active{
+    transform: scale(1.2);
+}
+
+.reset-score-button {
+    margin-right: 40px;
+}
+
+.text ,
+.confirmation-message{
+    font-size: 20px;
+}
